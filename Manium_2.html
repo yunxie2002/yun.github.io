@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="icon" href="M2_img/title_logo.png" type="png">
+    <link rel="shortcut icon" href="M2_img/title_logo.png" type="png">
+        <style>
+            .navbar .nav-link {
+            color: #EFDCBA !important;
+            
+        }
+
+#header-nav {
+    height: 110px;
+    transition: 0.6s;
+}
+
+.nav-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav .nav-item:hover a {
+            border-bottom: 2px solid #333;
+        }
+
+        .bg-light {
+    background-color: #f8f9fa!important;
+}
+
+.content-body {
+    padding-top: 4em;
+    padding-bottom: 4rem;
+}
+
+.text-pink {
+    color: rgb(213,110,122) !important;
+}
+
+.box {
+    display: flex;
+    width: 280px;
+}
+
+.assistents-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    width: 280px;
+}
+
+.text-sm {
+    font-size: 0.8em;
+    color: #787878;
+}
+
+.flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+.mr-2, .mx-2 {
+    margin-right: 0.5rem!important;
+}
+
+.main-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shadow-card {
+    box-shadow: 1px 1px 8px #d4d4d4;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.5px solid rgba(0,0,0,.1);
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.logo {
+            width: 180px;
+        }
+
+        .footer-item {
+            text-align: center;
+            margin: 0 1em;
+            padding: 3px;
+            list-style-type: none;
+        }
+
+        .bg-footer {
+            padding: 1em;
+            background-color: #3E3D47;
+        }
+
+        .bg-img {
+            background-image: url(html_img/tool.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 16em 3em;
+        }
+
+        .footer-link {
+            color: #EFDCBA;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none; /* 移除底線 */
+            background-color: transparent; /* 移除底色 */
+            color: #000;/* 移除字色 */
+        }
+
+        .btn-wide {
+            width: 150px;
+        }
+
+        .btn {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-pill {
+            border-radius: 50rem !important;
+        }
+
+        .btn-dark {
+            color: #EFDCBA;
+            background-color: #3E3D47;
+        }
+
+        .tab_css{display:flex;flex-wrap:wrap;justify-content:center;}
+        .tab_css input{display:none}
+        .tab_css label{margin: 0 5px 5px 0; padding: 10px 16px; cursor: pointer; border-radius: 5px; background: #ffffff; color: #787878; opacity: 0.5;}
+        .tab_content{order:1;display: none; width:100%; border-bottom: 3px solid #ddd; line-height: 1.6; font-size: .9em; padding: 15px; border: 1px solid #ddd; border-radius: 5px;}
+        .tab_css input:checked + label, .tab_css label:hover{opacity: 1; font-weight:bold;}
+        .tab_css input:checked + label + .tab_content{display: initial;}
+
+        </style>
+</head>
+
+<body>
+    <div>
+        <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top align-items-start">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://yunxie2002.github.io/mainpage.github.io/Manium_1.html" class="navbar-brand">
+                    <img width="100px" src="M2_img/LOGO4.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--以下 navbar 項目 + section連接nav-item、下面內容 -->
+                <div id="navbarContent" class="collapse navbar-collapse show d-flex justify-content-end fixed-top p-3"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center nav-item:hover a">
+                        <li class="nav-item"><a class="nav-link" href="https://yunxie2002.github.io/mainpage.github.io/Manium_1.html">品牌理念</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarContent"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">繪師介紹</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarContent">
+                                <li><a class="dropdown-item" href="/Manium_2.html">謝弘運</a></li>
+                                <li><a class="dropdown-item" href="/Manium_4.html">劉得心</a></li>
+                                <li><a class="dropdown-item" href="https://fire0408.github.io/index2.html">小街</a></li>
+                            </ul>
+                        </li>
+                    
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarContent"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">近期活動</a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarContent">
+                        <li><a class="dropdown-item" href="/Manium_3.html">▌ 排少專區 ▌</a></li>
+                        <li><a class="dropdown-item" href="#">▌ 數媒事变 ▌</a></li>
+                        <li><a class="dropdown-item" href="#">▌ 爆肝樹莓人的熬夜大冒險 ▌</a></li>
+                    </ul>
+
+                    <li class="nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+                </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 個人頁面 -->
+        <div id="personalPage">
+            <div class="bg-light">
+                <div class="container content-body">
+                    <div class="my-5 d-flex flex-row-reverse justify-content-end justify-content-sm-between align-items-center flex-wrap col-md-8 offset-md-3">
+                        <div class="d-flex align-items-center">
+                            <div class="box p-4">
+                                <a href="/Manium_2.html" class="assistents-img" style="background-image: url(M2_img/OC3.jpg);"></a>
+                                <a href="/Manium_4.html" class="assistents-img" style="background-image: url(M2_img/繪型.jpg);"></a>
+                                <a href="https://gabriella0629.github.io/U/" class="assistents-img" style="background-image: url(/M2_img/345633908_760576305600886_2094136022000983096_n\ -\ 複製.jpg);"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shadow-card bg-white p-4 p-sm-5 col-md-10 offset-md-1">
+                        <div class="row">
+
+                            <div class="col-lg-5">
+                                <div class="flex-start-center flex-wrap mb-3">
+                                    <div class="mr-3 main-img" style="background-image: url(M2_img/OC3.jpg);"></div>
+                                    <div class="d-flex flex-column">
+                                        <p class="text-sm mb-2">繪師</p>
+                                        <h5>謝弘運</h5>
+                                        <div class="d-flex p-2">
+                                            <a href="https://www.facebook.com/profile.php?id=100021987038538" target="_blank" class="mr-2">
+                                                <img src="M2_img/FB_logo_3.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <p>繪圖經歷</p>
+                                <p class="text-muted">擅長厚塗風格的繪師。作品充滿豐富的色彩和厚實的筆觸，展現出獨特的質感和層次感。透過他細膩的筆觸和獨特的運用，他能夠將畫面中的細節表現得生動而豐滿，帶給觀眾強烈的視覺衝擊和情感共鳴。</p>
+                            </div>
+                        </div>
+
+                        <!-- 頁籤 -->
+                        <div class="tab_css justify-content-end">
+                            <!-- TAB1 打包區塊 start -->
+                            <input id="tab1" type="radio" name="tab" checked="checked"/>
+                            <label for="tab1">插圖</label>
+                            <div class="tab_content">
+                                <div class="flex-column flex-center-center m-2">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/02.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/01.png" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/謝弘運_奇幻森林_補交.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/Nagi_完稿.png" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/工具間.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/來因.png" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/未來空港.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <img src="/M2_img/03.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TAB1 打包區塊 end -->
+                        
+                            <!-- TAB2 打包區塊 start -->
+                            <input id="tab2" type="radio" name="tab"/>
+                            <label for="tab2">全身</label>
+                            <div class="tab_content">
+                                <div class="flex-column flex-center-center m-2">
+                                    <div class="row">
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/女僕.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/小.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/oc.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/女僕3.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/sample.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="col-4 mb-4">
+                                            <img src="/M2_img/完稿0430(2).jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TAB2 打包區塊 end -->
+                        
+                            <!-- TAB3 打包區塊 start -->
+                            <input id="tab3" type="radio" name="tab"/>
+                            <label for="tab3">塗鴉</label>
+                            <div class="tab_content">
+                                <div class="row">
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/lin.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/塗.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/lu.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/千赫.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/u.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <img src="/M2_img/meta.jpg" class="img-fluid img-thumbnail">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TAB3 打包區塊 end -->
+                        </div>
+
+                    </div>
+                </div>
+
+                 <!-- 找委託 -->
+                 <div class="d-flex justify-content-center py-5">
+                    <button type="button" class="btn enroll btn btn-dark btn-wide rounded-pill ">
+                        <a class="footer-link" href="https://gabriella0629.github.io/xei/"><strong>前往委託</strong></button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 版尾 -->
+        <div>
+            <div class="bg-footer m-0">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <a href="https://yunxie2002.github.io/mainpage.github.io/Manium_1.html" class="logo">
+                        <img src="M2_img/LOGO4.png" class="img-fluid">
+                    </a>
+                    <ul class="mb-0 p-0">
+                        <div class="d-flex flex-column flex-lg-row justify-content-end mt-3">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><strong>品牌理念</strong></a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><strong>繪師介紹</strong></a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link"><strong>近期活動</strong></a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#exampleModal3"><strong>隱私權政策</strong></a>
+                            </li>
+                        </div>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+              <div class="modal-content">
+        
+                <div class="modal-header">
+                  <h6 class="modal-title" id="exampleModalLabel">
+                    <strong>歡迎使用我們的繪圖委託網站！在您使用本網站之前，請詳細閱讀以下隱私權政策，以了解我們如何收集、使用和保護您的個人資訊。</strong>
+    
+                    <strong>資訊收集與使用</strong>
+                    當您註冊成為本網站的使用者或提交繪圖委託時，我們可能會收集以下類型的個人資訊：
+                    
+                    姓名：用於識別您的身份和與您進行聯繫。
+                    電子郵件地址：用於發送與您的委託相關的通訊和更新。
+                    聯絡方式：用於與您就委託內容進行溝通。
+                    委託需求：用於確保我們能夠為您提供符合期望的繪圖服務。
+                    我們承諾不會將您的個人資訊出售、租借或交換給第三方，除非事先獲得您的明確同意，或基於法律要求或法院指令。
+                    
+                    <strong>資料存儲和安全</strong>
+                    我們將採取適當的技術和組織措施來保護您的個人資訊，以防止未經授權的存取、使用、披露、更改或破壞。我們將盡力確保您的個人資訊的安全性，但無法保證在互聯網上進行資料傳輸的絕對安全。
+                    
+                    <strong>Cookie 的使用</strong>
+                    本網站可能使用 Cookie 技術來提供更好的用戶體驗，並收集匿名的使用者資訊。Cookie 是一小段文本資訊，儲存在您的設備上，用於記錄您的偏好設置、優化網站功能和提供個人化的內容。您可以根據自己的偏好在瀏覽器中啟用或禁用 Cookie。
+                    
+                    <strong>外部連結</strong>
+                    本網站可能包含指向第三方網站或服務的連結，這些連結不受本隱私權政策的規範。我們建議您在訪問任何第三方網站之前閱讀其隱私權政策。
+                    
+                    <strong>未成年人的隱私</strong>
+                    我們尊重未成年人的隱私權。如果您是未滿法定年齡的人士，請在法定監護人的陪同下使用本網站，並且只在獲得監護人明確同意的情況下提交任何個人資訊。
+                    
+                    <strong>修改和刪除個人資訊</strong>
+                    您有權隨時訪問、修改或刪除我們收集的與您相關的個人資訊，只需通過本網站提供的相應功能或與我們聯繫。我們將根據適用法律要求的時間範圍內回應您的請求。
+                    
+                    <strong>隱私權政策的變更</strong>
+                    我們保留隨時修改本隱私權政策的權利。任何修改將在本網站上發布，並在生效之前提前通知您。請定期查看本隱私權政策以瞭解最新的隱私慣例。
+                    如果您對我們的隱私權政策有任何疑問或意見，請隨時與我們聯繫。感謝您使用我們的繪圖委託網站！
+                
+                </h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
